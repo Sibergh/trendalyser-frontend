@@ -1,9 +1,8 @@
-from flask import Flask
+#!env/bin/python
+from app import app
 from flask.ext.script import Manager
-
-app = Flask(__name__)
 
 manager = Manager(app)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    manager.run()
