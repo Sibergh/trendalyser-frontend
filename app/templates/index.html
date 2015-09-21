@@ -6,4 +6,14 @@
 
 <h1><center>Welcome to Trendalyser</center></h1>
 
+    {{ form.hidden_tag() }}
+<form action="" method="post" name="addkeyword">
+    <p>
+        Please enter a new keyword:
+        {{ form.keyword(size=80) }} <br>
+    </p>
+    <p>
+        <input type="submit" value="Add">
+    </p>
+</form>
 {% endblock %}
