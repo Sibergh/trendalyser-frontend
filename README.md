@@ -1,7 +1,7 @@
 # trendalyser-frontend
 
 Install:
-Run '''pip install -r requirements.txt'''
+Run `pip install -r requirements.txt`
 
-Start:
-'''python app.py'''
+Start: 
+`python app.py runserver`
