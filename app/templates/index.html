@@ -1,19 +1,24 @@
 {% extends "base.html" %}
 
+{% import "bootstrap/wtf.html" as wtf %}
+
 {% block title %}Trendalyser{% endblock %}
 
 {% block page_content %}
-
-<h1><center>Welcome to Trendalyser</center></h1>
-
-    {{ form.hidden_tag() }}
-<form action="" method="post" name="addkeyword">
+<div class="page-header">
+    <h1><center>Welcome to Trendalyser</center></h1>
+</div>
+<div class="container text-center">
     <p>
-        Please enter a new keyword:
-        {{ form.keyword(size=80) }} <br>
+        Here we will have some pretty images, graphs and some text about how good
+        and useful this application is.
     </p>
     <p>
-        <input type="submit" value="Add">
+        And maybe a signin/signup form.
     </p>
-</form>
+    <p>
+        And of course some endorsements from users and pretty logos for any
+        big companies that use the application.
+    </p>
+</div>
 {% endblock %}

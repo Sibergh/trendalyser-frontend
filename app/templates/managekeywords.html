@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% import "bootstrap/wtf.html" as wtf %}
+
+{% block title %}Trendalyser{% endblock %}
+
+{% block page_content %}
+<div class="page-header">
+</div>
+<form class="col-xs-3" action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        Please enter a new keyword <br>
+        {{ form.keyword.label }}: {{ form.keyword(size=24) }}
+        <button type="button" class="btn btn-default">Add</button>
+    </p>
+</form>
+{% endblock %}
