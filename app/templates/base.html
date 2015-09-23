@@ -38,9 +38,23 @@
 
 {% block content %}
 
+{% for message in get_flashed_messages() %}
+    <div class="alert alert-warning">
+        <button type="button" class="close" data-dismiss="alert">&times</button>
+        {{ message }}
+    </div>
+{% endfor %}
+
     {% block page_content %}{% endblock %}
 
 {% endblock %}
 
 {% block footer %}
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted">Place sticky footer content here.</p>
+  </div>
+</footer>
+
 {% endblock %}
