@@ -6,7 +6,7 @@ from flask_debugtoolbar import DebugToolbarExtension
 app = Flask(__name__)
 app.config.from_object('config')
 
-app.debug = True
+app.debug = True #Change this to false to remove debug toolbar for release version
 
 bootstrap = Bootstrap(app)
 db = MongoEngine(app)
