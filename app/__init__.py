@@ -6,6 +6,5 @@ app.config.from_object('config')
 
 bootstrap = Bootstrap(app)
 
-from app.main import views
-from app.main import errors
-from app.main import forms
+from .main import main as main_blueprint
+app.register_blueprint(main_blueprint)
