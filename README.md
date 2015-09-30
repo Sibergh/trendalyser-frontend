@@ -11,7 +11,7 @@ Start application:
 `python manage.py runserver`
 
 ### Contributing:  
-    To contribute to the project, fork the project, make the additions you want,  
+   To contribute to the project, fork the project, make the additions you want,  
     and create a pull request.  
     Bug reports should be filed through the issues tracker. If a solution is provided,  
     include the issue in the pull request.
