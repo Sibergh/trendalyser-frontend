@@ -1,8 +1,8 @@
 from flask import Flask, render_template, flash, redirect, url_for
+from app import db
 from . import main
-from .. import db
-from .forms import *
-from .models import Keyword
+from ..models import User, Keyword
+from .forms import addKeywordForm
 
 @main.route('/')
 def index():
